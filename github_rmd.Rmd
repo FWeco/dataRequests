@@ -1,0 +1,81 @@
+---
+title: "Creating and Committing a github repository"
+author: "Matt Shank"
+date: "4/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T, eval = F)
+source('script_dl_gh.R')
+
+library(knitr)
+```
+
+## This tutorial shows the process necessary to commit your working directory to a github repository 
+
+<br>
+
+* ### First, sign into your github account and create a new repository
+
+```{r GH1, echo=FALSE, eval = T, out.width = '100%', out.extra='style="background-color: #9ecff7; padding:10px;"'}
+knitr::include_graphics("GitHub1.JPG")
+```
+
+<br>
+<br>
+
+* ### Next, name your repository and give it a short description
+  + #### Choose whether privacy is set to 'Public' or 'Private'
+  + #### Make sure you click the box beside 'Initialize this repository with a README'
+* #### Then click the green 'Create repository' button
+
+```{r GH2, echo=FALSE, eval = T, out.width = '75%', out.extra='style="background-color: #9ecff7; padding:10px;"'}
+knitr::include_graphics("GitHub2.JPG")
+```
+
+<br>
+<br>
+
+* ### Now, after installing Git Bash from <https://gitforwindows.org/> (accept all defaults), open the Git Bash shell
+  + #### See the following website for some common Git Bash shell commands <https://smbc-nzp.github.io/dataSci/git_bash.html>
+  + ##### Use the 'pwd' (print working directory) command to see where your Git is currently pointed
+  + ##### Use 'cd ..' (change directory) to move back one step
+  + ##### Then use cd to navigate to your directory of interest
+
+```{r GH3, echo=FALSE, eval = T, out.width = '75%', out.extra='style="background-color: #9ecff7; padding:10px;"'}
+knitr::include_graphics("GitHub3.JPG")
+```
+
+<br>
+<br>
+
+* ### Now our directory is set to where our R directory and data files are
+  + #### We can check what files are located in our directory with 'ls'
+  + #### We must now create a nested sub-directory (folder), called gits
+  + #### We can now clone our repository into the gits directory using 'git clone https://github.com/FWeco/dataRequests.git' (the hyperlink is from our newly created github repository)
+
+```{r GH4, echo=FALSE, eval = T, out.width = '75%', out.extra='style="background-color: #9ecff7; padding:10px;"'}
+knitr::include_graphics("GitHub4.JPG")
+```
+
+<br>
+<br>
+
+* ### Next, we'll navigate to the directory where we cloned our repository, and check the status
+  + #### We're good to go!
+
+```{r GH5, echo=FALSE, eval = T, out.width = '75%', out.extra='style="background-color: #9ecff7; padding:10px;"'}
+knitr::include_graphics("GitHub5.JPG")
+```
+
+
+
+
+
+
+
+
+
+
+
